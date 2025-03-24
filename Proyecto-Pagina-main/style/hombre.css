@@ -1,0 +1,101 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #D9C7B8;
+    padding: 15px 20px;
+    height: 500%;
+    display: flex;
+    align-items: center;  
+    justify-content: space-between; 
+}
+
+/* Logo a la izquierda */
+.logo-container img {
+    width: 80px;
+    height: 65px;
+}
+
+/* Contenedor de navegación y búsqueda */
+.nav-search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Reduce la separación entre el menú y el buscador */
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px; /* Reduce el espacio entre los elementos del menú */
+    align-items: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 20px; /* Mantiene el tamaño del texto */
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #733924;
+    text-decoration: underline;
+}
+
+/* Search y carrito alineados a la derecha */
+.right-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Barra de búsqueda */
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 220px; /* Tamaño ligeramente reducido */
+    background: white;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.search-container i {
+    color: gray;
+}
+
+/* Estilo del carrito */
+.carrito {
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.carrito:hover {
+    color: #733924;
+}
+
+
