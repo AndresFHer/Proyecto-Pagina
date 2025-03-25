@@ -3,37 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zenda</title>
-    <link rel="stylesheet" href="../style/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRV9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style/ofertar.css">
+    <title>Ofertas</title>
 </head>
 <body>
     <header>
-        <!-- Logo alineado a la izquierda -->
         <div class="logo-container">
-            <h1><img src="../imagenes/logo-zapato.PNG" alt="Logo"></h1>
+            <img src="../imagenes/Logo.png" alt="Logo">
         </div>
-
-        <!-- Navegación centrada -->
-        <nav>
-            <ul>
-                <li><a href="index.html "><strong>Menú</strong></a></li>
-                <li><a href="hombre.html">hombre</a></li>
-                <li><a href="mujer.html">mujer</a></li>
-                <li><a href="novedades.html">blook</a></li>
-                <li><a href="ofertas.html">Ofertas</a></li>
-            </ul>
-        </nav>
-
-        <!-- Search y carrito alineados a la derecha -->
-        <div class="right-container">
-            <div class="search-container">
-                <i class="fas fa-search"></i>
-                <input type="text" placeholder="Buscar...">
+        <div class="nav-search-container">
+            <nav>
+                <ul>
+                    <li><a href="index.html "><strong>Menú</strong></a></li>
+                    <li><a href="hombre.html">hombre</a></li>
+                    <li><a href="mujer.html">mujer</a></li>
+                    <li><a href="novedades.html">blook</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                </ul>
+            </nav>
+            <div class="right-container">
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <a href="#" class="carrito">🛒</a>
             </div>
-            <a><img class="carrito" src="../imagenes/shopping_cart_24dp_FFFF_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
         </div>
     </header>
+
+    <main>
+        <div class="ofertas-titulo">
+            <img src="../imagenes/Oferta.png" alt="Ofertas Logo" style="width: 20%; height: auto;">
+            <h1>ATENCION NUEVAS OFERTAS</h1>
+            <p>Del 28 de marzo al 4 de abril</p>
+        </div>
+
+        <div class="tarjetas-container">
+            <div class="tarjeta">
+                <img src="../imagenes/TaconRojo.png" alt="Tacon Rojo" style="width: 100%; height: auto;">
+                <h2>Tacon de Cuero Angolasajon</h2>
+                <p>Precio: $120.500</p>
+                <p>Color: Rojo</p>
+                <p>Material: Tela</p>
+                <p>Descuento: 20%</p>
+            </div>
+            <div class="tarjeta">
+                <img src="../imagenes/BotaNegra.png" alt="Bota Negra" style="width: 100%; height: auto;">
+                <h2>Botas Negras edicion limitada</h2>
+                <p>Precio: $90.000</p>
+                <p>Color: Negro</p>
+                <p>Material: Cuero</p>
+                <p>Descuento: 15%</p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
