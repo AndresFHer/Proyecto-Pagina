@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Carrusel de Calzado</title>
+    
+</head>
+<body>
+    <h2>Carrusel de Calzado</h2>
+    <div class="carrusel">
+        <div class="producto">
+            <img src="img/la.png" alt="Zapato elegante">
+            <p><strong>Precio:</strong> $250.000</p>
+            <p><strong>Descripción:</strong> cuero</p>
+            <p><strong>Referencia:</strong> REF001</p>
+        </div>
+        <div class="producto">
+            <img src="img/bota negra.png" alt="bota de cuero">
+            <p><strong>Precio:</strong> $175.000</p>
+            <p><strong>Descripción:</strong>  cuero</p>
+            <p><strong>Referencia:</strong> REF002</p>
+        </div>
+        <div class="producto">
+            <img src="img/zapato Beige.jpg" alt="Zapato Beige">
+            <p><strong>Precio:</strong> $260.000</p>
+            <p><strong>Descripción:</strong> Botines casuales</p>
+            <p><strong>Referencia:</strong> REF003</p>
+        </div>
+        <div class="producto">
+            <img src="img/Verde fiesta .jpg" alt="Zapato Verde">
+            <p><strong>Precio:</strong> $230.000</p>
+            <p><strong>Descripción:</strong> Tacón fiesta</p>
+            <p><strong>Referencia:</strong> REF004</p>
+        </div>
+    </div>
+    <div class="botones">
+        <button onclick="cambiarProducto(-1)">Anterior</button>
+        <button onclick="cambiarProducto(1)">Siguiente</button>
+    </div>
+    
+    <script>
+        let indice = 0;
+        mostrarProducto(indice);
+        
+        function mostrarProducto(n) {
+            let productos = document.getElementsByClassName("producto");
+            for (let i = 0; i < productos.length; i++) {
+                productos[i].style.display = "none";
+            }
+            productos[n].style.display = "block";
+        }
+        
+        function cambiarProducto(n) {
+            let productos = document.getElementsByClassName("producto");
+            indice = (indice + n + productos.length) % productos.length;
+            mostrarProducto(indice);
+        }
+    </script>
+   <script src="mujer.py"></script>
+</body>
+</html>
