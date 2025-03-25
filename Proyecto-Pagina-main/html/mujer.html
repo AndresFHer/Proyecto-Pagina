@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/mujer.css">
+    <title>Carrusel de Calzado</title>
+</head>
+<body>
+
+    <div class="barra-superior">
+        <h1>mundo</h1>
+    </div>
+    
+    <header>
+        <!-- Logo alineado a la izquierda -->
+        <div class="logo-container">
+            <h1><img src="../imagenes/logo-zapato.PNG" alt="Logo"></h1>
+        </div>
+
+        <!-- Navegación centrada -->
+        <nav>
+            <ul>
+                <li><a href="index.html "><strong>Menú</strong></a></li>
+                <li><a href="hombre.html">hombre</a></li>
+                <li><a href="mujer.html">mujer</a></li>
+                <li><a href="novedades.html">blook</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+            </ul>
+        </nav>
+
+        <!-- Search y carrito alineados a la derecha -->
+        <div class="right-container">
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Buscar...">
+            </div>
+            <a href="#" class="carrito">🛒</a>
+        </div>
+    </header>
+
+    <h2>Carrusel de Calzado</h2>
+    <div class="carrusel">
+        <div class="producto">
+            <img src="img/la.png" alt="Zapato elegante">
+            <p><strong>Precio:</strong> $250.000</p>
+            <p><strong>Descripción:</strong> cuero</p>
+            <p><strong>Referencia:</strong> REF001</p>
+        </div>
+        <div class="producto">
+            <img src="../imagenes/WhatsApp Image 2025-03-22 at 1.32.19 PM.jpeg" alt="bota de cuero">
+            <p><strong>Precio:</strong> $175.000</p>
+            <p><strong>Descripción:</strong>  cuero</p>
+            <p><strong>Referencia:</strong> REF002</p>
+        </div>
+        <div class="producto">
+            <img src="../imagenes/WhatsApp Image 2025-03-22 at 1.32.42 PM.jpeg" alt="Botines casuales">
+            <p><strong>Precio:</strong> $60</p>
+            <p><strong>Descripción:</strong> Botines casuales</p>
+            <p><strong>Referencia:</strong> REF003</p>
+        </div>
+    </div>
+    <div class="botones">
+        <button onclick="cambiarProducto(-1)">Anterior</button>
+        <button onclick="cambiarProducto(1)">Siguiente</button>
+    </div>
+    <footer class="footer">
+        <div class="container2">
+            <div class="footer-row">
+                <div class="footer-link">
+                         <h4>Compañia</h4>
+                        <ul>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Politica de privacidad</a></li>
+                            <li><a href="#">Terminos y condiciones</a></li> 
+                         </ul>
+                </div>
+                <div class="footer-link">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Compras</a></li>
+                        <li><a href="#">Envios</a></li>
+                        <li><a href="#">Pagos</a></li>
+                    </ul>
+                </div>
+                <div class="foother-link">
+                    <a href="#"><img src="../imagenes/instagram.png" alt=""></a>
+                    <a href="#"><img src="../imagenes/tik-tok.png" alt=""></a>
+                    <a href="3"><img src="../imagenes/facebook.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    
+    <script>
+        let indice = 0;
+        mostrarProducto(indice);
+        
+        function mostrarProducto(n) {
+            let productos = document.getElementsByClassName("producto");
+            for (let i = 0; i < productos.length; i++) {
+                productos[i].style.display = "none";
+            }
+            productos[n].style.display = "block";
+        }
+        
+        function cambiarProducto(n) {
+            let productos = document.getElementsByClassName("producto");
+            indice = (indice + n + productos.length) % productos.length;
+            mostrarProducto(indice);
+        }
+    </script>
+   <script src="mujer.py"></script>
+   
+</body>
+</html>
