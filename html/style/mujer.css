@@ -140,3 +140,56 @@ nav a:hover {
 h2 {
     color: #333;
 }
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-link{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-link h4{
+    font-size: 25px;
+    color: #733924;
+    margin-bottom: 25px;
+    font-weight: 500; /* grosor de la letra*/
+    border-bottom: 2px solid #402116;
+    padding-bottom: 10px;
+    display: inline-block;
+
+}
+
+.footer-link ul li a{
+    font-size: 18px;
+    text-decoration: none; /*Para quitar cualquier decoración (sin subrayado, sin tachado, etc.).*/
+    color:#733924 ;
+    margin-bottom: 15px;
+    transition: all .4 ease;
+
+}
+
+
+
+.footer-link ul li a:hover{
+    color: #034159;
+    padding-left: 10px;
+}
+
+.foother-link {
+    display: flex;  /* Alinea los elementos hijos (los enlaces) de manera horizontal */
+    justify-content: center;  /* Centra los enlaces horizontalmente en el contenedor */
+    gap: 30px;  /* Ajusta el espacio entre las imágenes (puedes modificar el valor según lo que necesites) */
+    margin-top: 20px; /* Añade un poco de espacio hacia arriba si es necesario */
+}
+
+.foother-link a {
+    display: inline-block; /* Asegura que los enlaces se comporten como elementos en línea */
+}
+
+.foother-link img {
+    width: 70px;  /* Ajusta el tamaño de las imágenes */
+    height: auto;  /* Mantiene la proporción de las imágenes */
+}
+
