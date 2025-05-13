@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #D9C7B8;
+    padding: 15px 20px;
+    height: 500%;
+    display: flex;
+    align-items: center;  
+    justify-content: space-between; 
+}
+
+/* Logo a la izquierda */
+.logo-container img {
+    width: 105px;
+    height: 105px;
+}
+
+/* Contenedor de navegación y búsqueda */
+.nav-search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Reduce la separación entre el menú y el buscador */
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px; /* Reduce el espacio entre los elementos del menú */
+    align-items: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px; /* Mantiene el tamaño del texto */
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* Search y carrito alineados a la derecha */
+.right-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Barra de búsqueda */
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 220px; /* Tamaño ligeramente reducido */
+    background: white;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.search-container i {
+    color: gray;
+}
+
+/* Estilo del carrito */
+.carrito {
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.carrito:hover {
+    color: #733924;
+}
+
+.carrusel {
+    position: relative;
+    max-width: 300px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+   
+}
+
+.producto {
+    display: none;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.botones {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones button {
+    background-color: #733924;
+    color:whitesmoke;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botones button:hover {
+    background-color: #402116;
+}
+
+h2 {
+    color: #333;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-link{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-link h4{
+    font-size: 25px;
+    color: #733924;
+    margin-bottom: 25px;
+    font-weight: 500; /* grosor de la letra*/
+    border-bottom: 2px solid #402116;
+    padding-bottom: 10px;
+    display: inline-block;
+
+}
+
+.footer-link ul li a{
+    font-size: 18px;
+    text-decoration: none; /*Para quitar cualquier decoración (sin subrayado, sin tachado, etc.).*/
+    color:#733924 ;
+    margin-bottom: 15px;
+    transition: all .4 ease;
+
+}
+
+
+
+.footer-link ul li a:hover{
+    color: #034159;
+    padding-left: 10px;
+}
+
+.foother-link {
+    display: flex;  /* Alinea los elementos hijos (los enlaces) de manera horizontal */
+    justify-content: center;  /* Centra los enlaces horizontalmente en el contenedor */
+    gap: 30px;  /* Ajusta el espacio entre las imágenes (puedes modificar el valor según lo que necesites) */
+    margin-top: 20px; /* Añade un poco de espacio hacia arriba si es necesario */
+}
+
+.foother-link a {
+    display: inline-block; /* Asegura que los enlaces se comporten como elementos en línea */
+}
+
+.foother-link img {
+    width: 70px;  /* Ajusta el tamaño de las imágenes */
+    height: auto;  /* Mantiene la proporción de las imágenes */
+}
+

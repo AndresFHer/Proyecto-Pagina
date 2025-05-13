@@ -1,0 +1,315 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #D9C7B8;
+    padding: 15px 20px;
+    height: 500%;
+    display: flex;
+    align-items: center;  
+    justify-content: space-between; 
+}
+
+/* Logo a la izquierda */
+.logo-container img {
+    width: 105px;
+    height: 105px;
+}
+
+/* Contenedor de navegación y búsqueda */
+.nav-search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Reduce la separación entre el menú y el buscador */
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px; /* Reduce el espacio entre los elementos del menú */
+    align-items: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px; /* Mantiene el tamaño del texto */
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* Search y carrito alineados a la derecha */
+.right-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Barra de búsqueda */
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 220px; /* Tamaño ligeramente reducido */
+    background: white;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.search-container i {
+    color: gray;
+}
+
+/* Estilo del carrito */
+.carrito {
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.carrito:hover {
+    color: #733924;
+}
+
+
+
+/* ----- SECCIÓN BANNER ----- */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.banner-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #733924;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #5a2a1c;
+}
+
+/* ----- SECCIÓN DE PRODUCTOS DESTACADOS ----- */
+.productos {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f5f5f5;
+}
+
+.productos h2 {
+    font-size: 32px;
+    color: #733924;
+    margin-bottom: 20px;
+}
+
+.productos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.producto {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #733924;
+}
+
+.producto p {
+    color: #5a2a1c;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px;
+    background: #733924;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #5a2a1c;
+}
+
+
+/* Estilos main */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+.services .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.services-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.service-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+}
+.service-item i {
+    font-size: 3rem;
+    color: #733924;
+    margin-bottom: 10px;
+}
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.service-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+
+
+/* estilos del footer*/
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-link{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-link h4{
+    font-size: 25px;
+    color: #733924;
+    margin-bottom: 25px;
+    font-weight: 500; /* grosor de la letra*/
+    border-bottom: 2px solid #402116;
+    padding-bottom: 10px;
+    display: inline-block;
+
+}
+
+.footer-link ul li a{
+    font-size: 18px;
+    text-decoration: none; /*Para quitar cualquier decoración (sin subrayado, sin tachado, etc.).*/
+    color:#733924 ;
+    margin-bottom: 15px;
+    transition: all .4 ease;
+
+}
+
+
+
+.footer-link ul li a:hover{
+    color: #034159;
+    padding-left: 10px;
+}
+
+.foother-link {
+    display: flex;  /* Alinea los elementos hijos (los enlaces) de manera horizontal */
+    justify-content: center;  /* Centra los enlaces horizontalmente en el contenedor */
+    gap: 30px;  /* Ajusta el espacio entre las imágenes (puedes modificar el valor según lo que necesites) */
+    margin-top: 20px; /* Añade un poco de espacio hacia arriba si es necesario */
+}
+
+.foother-link a {
+    display: inline-block; /* Asegura que los enlaces se comporten como elementos en línea */
+}
+
+.foother-link img {
+    width: 70px;  /* Ajusta el tamaño de las imágenes */
+    height: auto;  /* Mantiene la proporción de las imágenes */
+}
